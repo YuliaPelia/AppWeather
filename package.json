@@ -1,0 +1,19 @@
+{
+  "name": "http2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "handlebars": "^4.7.8",
+    "parcel": "^2.13.3",
+    "parcel-transformer-hbs": "^1.0.4"
+  }
+}
