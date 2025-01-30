@@ -7,7 +7,7 @@
     "start": "parcel index.html",
     "build": "parcel build ./index.html --public-url /WeatherApp/",
     "deploy": "gh-pages -d dist"
-  },
+  }, "homepage": "https://lidiiapopadiuk.github.io/WeatherApp/",
   "keywords": [],
   "author": "",
   "license": "ISC",
