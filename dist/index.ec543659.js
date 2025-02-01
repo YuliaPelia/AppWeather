@@ -605,67 +605,29 @@ const getWeatherBtn = document.querySelector("#search-btn");
 const getWeatherInput = document.querySelector("#city-input");
 const weatherWrapper = document.querySelector(".weather-info");
 const getSearchBox = document.querySelector(".search-box");
-// const weatherArray = [
-//   "clear sky",
-//   "few clouds",
-//   "	scattered clouds",
-//   "	broken clouds",
-//   "	shower rain",
-//   "	rain",
-//   "thunderstorm",
-//   "snow",
-//   "mist",
-// ];
-// const weatherArrayForEach =  weatherArray.find(data.weather[0].main)
-// const weatherImages = {
-//   'clear sky Day': "./img/Day-Clear.png",
-//   CloudsDay: "./img/Day-Clouds.png",
-//   RainDay: "./img/Day-Rain.png",
-//   SnowDay: "./img/Day-Snow.png",
-//   WindDay: "./img/Day-wind.png",
-//   ThunderstormDay: "./img/Day-Thunderstorm.png",
-//   DrizzleDay: "./img/Day-Drizzle.png",
-//   ClearNight: "./img/Night Moon.png",
-//   CloudsNight: "./img/Night Clouds.png",
-//   RainNight: "./img/Night Rain.png",
-//   SnowNight: "./img/Night Snow.png",
-//   WindNight: "./img/Night Wind.png",
-//   ThunderstormNight: "./img/Night Storm.png",
-//   DrizzleNight: "./img/Night-Drizzle.png",
-// };
+const weatherImages = {
+    clearDay: "./img/Day-Clear.png",
+    CloudsDay: "./Day-Clouds.png",
+    RainDay: "./img/Day-Rain.png",
+    SnowDay: "./img/Day-Snow.png",
+    WindDay: "./img/Day-wind.png",
+    ThunderstormDay: "./img/Day-Thunderstorm.png",
+    DrizzleDay: "./img/Day-Drizzle.png",
+    ClearNight: "./img/Night-Moon.png",
+    CloudsNight: "./img/Night-Clouds.png",
+    RainNight: "./img/Night-Rain.png",
+    SnowNight: "./img/Night-Snow.png",
+    WindNight: "./img/Night-Wind.png",
+    ThunderstormNight: "./img/Night-Storm.png",
+    DrizzleNight: "./img/Night-Drizzle.png"
+};
 getWeatherInput.addEventListener("keydown", (event)=>{
     if (event.key === "Enter") weatherInfo();
 });
 getWeatherBtn.addEventListener("click", ()=>{
     weatherInfo();
-// if (!getWeatherInput.value.trim()) return;
-// getWeatherByCity(getWeatherInput.value.trim())
-//   .then((response) => response.json())
-//   .then((data) => {
-//     console.log(data);
-//     getSearchBox.style.borderBottom = "1px solid #ddd";
-//     const info = {
-//       name: data.name,
-//       temp: data.main.temp,
-//       descr: data.weather[0].main,
-//       humidity: data.main.humidity,
-//       wind: data.wind.speed,
-//     };
-//     weatherWrapper.innerHTML = templateWeather(info);
-//     console.log(info);
-//     // console.log('remplateWeather:', templateWeather);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//     alert("Це місто не знайдено. Спробуйте ще раз!");
-//     getSearchBox.style.borderBottom = "none";
-//     getWeatherInput.value = "";
-//     weatherWrapper.innerHTML = ''
-//   });
 });
 const getWeatherByCity = (city)=>{
-    // const city = "Kyiv";
-    // const apiKey = "222f0dc73bf33f7ada4e997d217948b2";
     const params = new URLSearchParams({
         q: city,
         appid: "222f0dc73bf33f7ada4e997d217948b2",
@@ -677,6 +639,7 @@ const weatherInfo = ()=>{
     getWeatherByCity(getWeatherInput.value.trim()).then((response)=>response.json()).then((data)=>{
         console.log(data);
         getSearchBox.style.borderBottom = "1px solid #ddd";
+        const timeDate = new Date();
         const info = {
             name: data.name,
             temp: data.main.temp,
@@ -684,6 +647,8 @@ const weatherInfo = ()=>{
             humidity: data.main.humidity,
             wind: data.wind.speed
         };
+        if (timeDate.getHours() >= 20 || timeDate.getHours() < 4) info.image = weatherImages[`${data.weather[0].main}Night`];
+        else info.image = weatherImages[`${data.weather[0].main}Day`];
         // }
         weatherWrapper.innerHTML = (0, _weatherHbsDefault.default)(info);
         console.log(info);
@@ -782,8 +747,8 @@ const templateFunction = (0, _handlebarsDefault.default).template({
                     "column": 30
                 }
             }
-        }) : helper)) + ' \u043C/\u0441</p>\r\n</div>\r\n<div class="weather-icon">\r\n  <img id="weather-icon" src="' + alias4((helper = (helper = lookupProperty(helpers, "weatherImage") || (depth0 != null ? lookupProperty(depth0, "weatherImage") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
-            "name": "weatherImage",
+        }) : helper)) + ' \u043C/\u0441</p>\r\n</div>\r\n<div class="weather-icon">\r\n  <img id="weather-icon" src="' + alias4((helper = (helper = lookupProperty(helpers, "image") || (depth0 != null ? lookupProperty(depth0, "image") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+            "name": "image",
             "hash": {},
             "data": data,
             "loc": {
@@ -793,7 +758,7 @@ const templateFunction = (0, _handlebarsDefault.default).template({
                 },
                 "end": {
                     "line": 9,
-                    "column": 46
+                    "column": 39
                 }
             }
         }) : helper)) + "\" alt=\"" + alias4((helper = (helper = lookupProperty(helpers, "descr") || (depth0 != null ? lookupProperty(depth0, "descr") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
@@ -803,11 +768,11 @@ const templateFunction = (0, _handlebarsDefault.default).template({
             "loc": {
                 "start": {
                     "line": 9,
-                    "column": 53
+                    "column": 46
                 },
                 "end": {
                     "line": 9,
-                    "column": 62
+                    "column": 55
                 }
             }
         }) : helper)) + "\" />\r\n</div>\r\n\r\n";
