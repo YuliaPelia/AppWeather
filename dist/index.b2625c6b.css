@@ -56,4 +56,11 @@ body {
 #search-btn:hover {
   background-color: #2980b9;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
 /*# sourceMappingURL=index.b2625c6b.css.map */

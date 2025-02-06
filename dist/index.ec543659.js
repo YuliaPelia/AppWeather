@@ -601,25 +601,73 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _weatherHbs = require("../templates/weather.hbs");
 var _weatherHbsDefault = parcelHelpers.interopDefault(_weatherHbs);
+var _mistimgPng = require("../img/mistimg.png");
+var _mistimgPngDefault = parcelHelpers.interopDefault(_mistimgPng);
+var _dayClearPng = require("../img/Day-Clear.png");
+var _dayClearPngDefault = parcelHelpers.interopDefault(_dayClearPng);
+var _dayCloudsPng = require("../img/Day-Clouds.png");
+var _dayCloudsPngDefault = parcelHelpers.interopDefault(_dayCloudsPng);
+var _dayRainPng = require("../img/Day-Rain.png");
+var _dayRainPngDefault = parcelHelpers.interopDefault(_dayRainPng);
+var _daySnowPng = require("../img/Day-Snow.png");
+var _daySnowPngDefault = parcelHelpers.interopDefault(_daySnowPng);
+var _dayWindPng = require("../img/Day-wind.png");
+var _dayWindPngDefault = parcelHelpers.interopDefault(_dayWindPng);
+var _dayThunderstormPng = require("../img/Day-Thunderstorm.png");
+var _dayThunderstormPngDefault = parcelHelpers.interopDefault(_dayThunderstormPng);
+var _dayDrizzlePng = require("../img/Day-Drizzle.png");
+var _dayDrizzlePngDefault = parcelHelpers.interopDefault(_dayDrizzlePng);
+var _nightMoonPng = require("../img/Night-Moon.png");
+var _nightMoonPngDefault = parcelHelpers.interopDefault(_nightMoonPng);
+var _nightCloudsPng = require("../img/Night-Clouds.png");
+var _nightCloudsPngDefault = parcelHelpers.interopDefault(_nightCloudsPng);
+var _nightRainPng = require("../img/Night-Rain.png");
+var _nightRainPngDefault = parcelHelpers.interopDefault(_nightRainPng);
+var _nightSnowPng = require("../img/Night-Snow.png");
+var _nightSnowPngDefault = parcelHelpers.interopDefault(_nightSnowPng);
+var _nightWindPng = require("../img/Night-Wind.png");
+var _nightWindPngDefault = parcelHelpers.interopDefault(_nightWindPng);
+var _nightStormPng = require("../img/Night-Storm.png");
+var _nightStormPngDefault = parcelHelpers.interopDefault(_nightStormPng);
+var _nightDrizzlePng = require("../img/Night-Drizzle.png");
+var _nightDrizzlePngDefault = parcelHelpers.interopDefault(_nightDrizzlePng);
 const getWeatherBtn = document.querySelector("#search-btn");
 const getWeatherInput = document.querySelector("#city-input");
 const weatherWrapper = document.querySelector(".weather-info");
 const getSearchBox = document.querySelector(".search-box");
+// const weatherImages = {
+//   clearDay: "./img/Day-Clear.png",
+//   CloudsDay: "./Day-Clouds.png",
+//   RainDay: "./img/Day-Rain.png",
+//   SnowDay: "./img/Day-Snow.png",
+//   WindDay: "./img/Day-wind.png",
+//   ThunderstormDay: "./img/Day-Thunderstorm.png",
+//   DrizzleDay: "./img/Day-Drizzle.png",
+//   ClearNight: "./img/Night-Moon.png",
+//   CloudsNight: "./img/Night-Clouds.png",
+//   RainNight: "./img/Night-Rain.png",
+//   SnowNight: "./img/Night-Snow.png",
+//   WindNight: "./img/Night-Wind.png",
+//   ThunderstormNight: "./img/Night-Storm.png",
+//   DrizzleNight: "./img/Night-Drizzle.png",
+// };
 const weatherImages = {
-    clearDay: "./img/Day-Clear.png",
-    CloudsDay: "./Day-Clouds.png",
-    RainDay: "./img/Day-Rain.png",
-    SnowDay: "./img/Day-Snow.png",
-    WindDay: "./img/Day-wind.png",
-    ThunderstormDay: "./img/Day-Thunderstorm.png",
-    DrizzleDay: "./img/Day-Drizzle.png",
-    ClearNight: "./img/Night-Moon.png",
-    CloudsNight: "./img/Night-Clouds.png",
-    RainNight: "./img/Night-Rain.png",
-    SnowNight: "./img/Night-Snow.png",
-    WindNight: "./img/Night-Wind.png",
-    ThunderstormNight: "./img/Night-Storm.png",
-    DrizzleNight: "./img/Night-Drizzle.png"
+    MistDay: (0, _mistimgPngDefault.default),
+    MistNight: (0, _mistimgPngDefault.default),
+    ClearDay: (0, _dayClearPngDefault.default),
+    CloudsDay: (0, _dayCloudsPngDefault.default),
+    RainDay: (0, _dayRainPngDefault.default),
+    SnowDay: (0, _daySnowPngDefault.default),
+    WindDay: (0, _dayWindPngDefault.default),
+    ThunderstormDay: (0, _dayThunderstormPngDefault.default),
+    DrizzleDay: (0, _dayDrizzlePngDefault.default),
+    ClearNight: (0, _nightMoonPngDefault.default),
+    CloudsNight: (0, _nightCloudsPngDefault.default),
+    RainNight: (0, _nightRainPngDefault.default),
+    SnowNight: (0, _nightSnowPngDefault.default),
+    WindNight: (0, _nightWindPngDefault.default),
+    ThunderstormNight: (0, _nightStormPngDefault.default),
+    DrizzleNight: (0, _nightDrizzlePngDefault.default)
 };
 getWeatherInput.addEventListener("keydown", (event)=>{
     if (event.key === "Enter") weatherInfo();
@@ -662,7 +710,7 @@ const weatherInfo = ()=>{
     });
 };
 
-},{"../templates/weather.hbs":"9WaUD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9WaUD":[function(require,module,exports,__globalThis) {
+},{"../templates/weather.hbs":"9WaUD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/Day-Clear.png":"4Tlro","../img/Day-Clouds.png":"4iRKF","../img/Day-Rain.png":"igVBF","../img/Day-Snow.png":"5Ti1g","../img/Day-wind.png":"d46zn","../img/Day-Thunderstorm.png":"fOkPQ","../img/Day-Drizzle.png":"91xVt","../img/Night-Moon.png":"8z0js","../img/Night-Clouds.png":"aNKzJ","../img/Night-Rain.png":"Gpbyp","../img/Night-Snow.png":"fu9Dl","../img/Night-Wind.png":"cA5iB","../img/Night-Storm.png":"ihgS6","../img/Night-Drizzle.png":"eZtYE","../img/mistimg.png":"6zVG4"}],"9WaUD":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -11983,6 +12031,86 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["gE0E2","fWRBR"], "fWRBR", "parcelRequire94c2")
+},{}],"4Tlro":[function(require,module,exports,__globalThis) {
+module.exports = require("2eff32012fe3ce87").getBundleURL('jjcXs') + "Day-Clear.aa5c7de3.png" + "?" + Date.now();
+
+},{"2eff32012fe3ce87":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ('' + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"4iRKF":[function(require,module,exports,__globalThis) {
+module.exports = require("8592bfa35ba50c5c").getBundleURL('jjcXs') + "Day-Clouds.f644ba8e.png" + "?" + Date.now();
+
+},{"8592bfa35ba50c5c":"lgJ39"}],"igVBF":[function(require,module,exports,__globalThis) {
+module.exports = require("683756e3b04c2f75").getBundleURL('jjcXs') + "Day-Rain.431c1554.png" + "?" + Date.now();
+
+},{"683756e3b04c2f75":"lgJ39"}],"5Ti1g":[function(require,module,exports,__globalThis) {
+module.exports = require("26c174044b64f69b").getBundleURL('jjcXs') + "Day-Snow.c062d8bc.png" + "?" + Date.now();
+
+},{"26c174044b64f69b":"lgJ39"}],"d46zn":[function(require,module,exports,__globalThis) {
+module.exports = require("bf00a995ee59912").getBundleURL('jjcXs') + "Day-wind.ae005f0f.png" + "?" + Date.now();
+
+},{"bf00a995ee59912":"lgJ39"}],"fOkPQ":[function(require,module,exports,__globalThis) {
+module.exports = require("2cfa1468a3270cf0").getBundleURL('jjcXs') + "Day-Thunderstorm.01c8b724.png" + "?" + Date.now();
+
+},{"2cfa1468a3270cf0":"lgJ39"}],"91xVt":[function(require,module,exports,__globalThis) {
+module.exports = require("290961b0be2fb456").getBundleURL('jjcXs') + "Day-Drizzle.dacf2bfb.png" + "?" + Date.now();
+
+},{"290961b0be2fb456":"lgJ39"}],"8z0js":[function(require,module,exports,__globalThis) {
+module.exports = require("fcdee459324308f8").getBundleURL('jjcXs') + "Night-Moon.e9275fda.png" + "?" + Date.now();
+
+},{"fcdee459324308f8":"lgJ39"}],"aNKzJ":[function(require,module,exports,__globalThis) {
+module.exports = require("a4bd8af46bdaf4a7").getBundleURL('jjcXs') + "Night-Clouds.ab0ed41e.png" + "?" + Date.now();
+
+},{"a4bd8af46bdaf4a7":"lgJ39"}],"Gpbyp":[function(require,module,exports,__globalThis) {
+module.exports = require("a13766791ec95c79").getBundleURL('jjcXs') + "Night-Rain.0c345d82.png" + "?" + Date.now();
+
+},{"a13766791ec95c79":"lgJ39"}],"fu9Dl":[function(require,module,exports,__globalThis) {
+module.exports = require("46551ecc539cf960").getBundleURL('jjcXs') + "Night-Snow.29c45361.png" + "?" + Date.now();
+
+},{"46551ecc539cf960":"lgJ39"}],"cA5iB":[function(require,module,exports,__globalThis) {
+module.exports = require("ab36a9dd266eec74").getBundleURL('jjcXs') + "Night-Wind.4957a8f2.png" + "?" + Date.now();
+
+},{"ab36a9dd266eec74":"lgJ39"}],"ihgS6":[function(require,module,exports,__globalThis) {
+module.exports = require("a4df7be50b926f30").getBundleURL('jjcXs') + "Night-Storm.edd10010.png" + "?" + Date.now();
+
+},{"a4df7be50b926f30":"lgJ39"}],"eZtYE":[function(require,module,exports,__globalThis) {
+module.exports = require("f09b2efecc08670f").getBundleURL('jjcXs') + "Night-Drizzle.5150d854.png" + "?" + Date.now();
+
+},{"f09b2efecc08670f":"lgJ39"}],"6zVG4":[function(require,module,exports,__globalThis) {
+module.exports = require("926d2590fef2c924").getBundleURL('jjcXs') + "mistimg.0c45b201.png" + "?" + Date.now();
+
+},{"926d2590fef2c924":"lgJ39"}]},["gE0E2","fWRBR"], "fWRBR", "parcelRequire94c2")
 
 //# sourceMappingURL=index.ec543659.js.map

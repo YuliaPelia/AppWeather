@@ -124,6 +124,12 @@ body {
 #search-btn:hover {
   background-color: #2980b9;
 }
+img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
 
 /* .weather-img{
     border-radius: 100%;
