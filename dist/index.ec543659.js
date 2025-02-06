@@ -710,7 +710,7 @@ const weatherInfo = ()=>{
     });
 };
 
-},{"../templates/weather.hbs":"9WaUD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../img/Day-Clear.png":"4Tlro","../img/Day-Clouds.png":"4iRKF","../img/Day-Rain.png":"igVBF","../img/Day-Snow.png":"5Ti1g","../img/Day-wind.png":"d46zn","../img/Day-Thunderstorm.png":"fOkPQ","../img/Day-Drizzle.png":"91xVt","../img/Night-Moon.png":"8z0js","../img/Night-Clouds.png":"aNKzJ","../img/Night-Rain.png":"Gpbyp","../img/Night-Snow.png":"fu9Dl","../img/Night-Wind.png":"cA5iB","../img/Night-Storm.png":"ihgS6","../img/Night-Drizzle.png":"eZtYE","../img/mistimg.png":"6zVG4"}],"9WaUD":[function(require,module,exports,__globalThis) {
+},{"../templates/weather.hbs":"9WaUD","../img/mistimg.png":"6zVG4","../img/Day-Clear.png":"4Tlro","../img/Day-Clouds.png":"4iRKF","../img/Day-Rain.png":"igVBF","../img/Day-Snow.png":"5Ti1g","../img/Day-wind.png":"d46zn","../img/Day-Thunderstorm.png":"fOkPQ","../img/Day-Drizzle.png":"91xVt","../img/Night-Moon.png":"8z0js","../img/Night-Clouds.png":"aNKzJ","../img/Night-Rain.png":"Gpbyp","../img/Night-Snow.png":"fu9Dl","../img/Night-Wind.png":"cA5iB","../img/Night-Storm.png":"ihgS6","../img/Night-Drizzle.png":"eZtYE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9WaUD":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebars = require("handlebars");
@@ -12031,10 +12031,10 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"4Tlro":[function(require,module,exports,__globalThis) {
-module.exports = require("2eff32012fe3ce87").getBundleURL('jjcXs') + "Day-Clear.aa5c7de3.png" + "?" + Date.now();
+},{}],"6zVG4":[function(require,module,exports,__globalThis) {
+module.exports = require("926d2590fef2c924").getBundleURL('jjcXs') + "mistimg.0c45b201.png" + "?" + Date.now();
 
-},{"2eff32012fe3ce87":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+},{"926d2590fef2c924":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -12069,7 +12069,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"4iRKF":[function(require,module,exports,__globalThis) {
+},{}],"4Tlro":[function(require,module,exports,__globalThis) {
+module.exports = require("2eff32012fe3ce87").getBundleURL('jjcXs') + "Day-Clear.aa5c7de3.png" + "?" + Date.now();
+
+},{"2eff32012fe3ce87":"lgJ39"}],"4iRKF":[function(require,module,exports,__globalThis) {
 module.exports = require("8592bfa35ba50c5c").getBundleURL('jjcXs') + "Day-Clouds.f644ba8e.png" + "?" + Date.now();
 
 },{"8592bfa35ba50c5c":"lgJ39"}],"igVBF":[function(require,module,exports,__globalThis) {
@@ -12108,9 +12111,6 @@ module.exports = require("a4df7be50b926f30").getBundleURL('jjcXs') + "Night-Stor
 },{"a4df7be50b926f30":"lgJ39"}],"eZtYE":[function(require,module,exports,__globalThis) {
 module.exports = require("f09b2efecc08670f").getBundleURL('jjcXs') + "Night-Drizzle.5150d854.png" + "?" + Date.now();
 
-},{"f09b2efecc08670f":"lgJ39"}],"6zVG4":[function(require,module,exports,__globalThis) {
-module.exports = require("926d2590fef2c924").getBundleURL('jjcXs') + "mistimg.0c45b201.png" + "?" + Date.now();
-
-},{"926d2590fef2c924":"lgJ39"}]},["gE0E2","fWRBR"], "fWRBR", "parcelRequire94c2")
+},{"f09b2efecc08670f":"lgJ39"}]},["gE0E2","fWRBR"], "fWRBR", "parcelRequire94c2")
 
 //# sourceMappingURL=index.ec543659.js.map
