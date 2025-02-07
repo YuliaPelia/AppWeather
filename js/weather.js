@@ -63,7 +63,7 @@ const weatherImages = {
 getWeatherInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     weatherInfo();
-  } // test
+  } 
 });
 
 getWeatherBtn.addEventListener("click", () => {
