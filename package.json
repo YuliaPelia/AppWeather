@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "start": "npx parcel index.html",
-    "build": "parcel build ./index.html --public-url /WeatherApp/"
+    "build": "parcel build ./index.html --public-url /WheatherApp/"
   },
   
   "repository": {    "type": "git",
-    "url": "git+https://github.com/lidiiapopadiuk/WeatherApp.git"  },
-  "homepage": "https://lidiiapopadiuk.github.io/WeatherApp/",
-  "bugs": {    "url": "https://github.com/lidiiapopadiuk/WeatherApp/issues"
+    "url": "git+https://github.com/lidiiapopadiuk/WheatherApp.git"  },
+  "homepage": "https://lidiiapopadiuk.github.io/WheatherApp/",
+  "bugs": {    "url": "https://github.com/lidiiapopadiuk/WheatherApp/issues"
   },
   "keywords": [],
   "author": "",
