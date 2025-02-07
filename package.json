@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "start": "npx parcel index.html",
-    "build": "parcel build ./index.html --public-url /WheatherApp/"
+    "build": "parcel build ./index.html --public-url /AppWeather/"
   },
-  
-  "repository": {    "type": "git",
-    "url": "git+https://github.com/LidiiaPopadiuk/WheatherApp.git"  },
-  "homepage": "https://LidiiaPopadiuk.github.io/WheatherApp/",
-  "bugs": {    "url": "https://github.com/LidiiaPopadiuk/WheatherApp/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LidiiaPopadiuk/AppWeather.git"
+  },
+  "homepage": "https://LidiiaPopadiuk.github.io/AppWeather/",
+  "bugs": {
+    "url": "https://github.com/LidiiaPopadiuk/AppWeather/issues"
   },
   "keywords": [],
   "author": "",
