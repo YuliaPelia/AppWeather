@@ -2,18 +2,18 @@
   "name": "http2",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://YuliaPelia.github.io/AppWeather/",
   "type": "module",
   "scripts": {
-    "start": "npx parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build ./index.html --public-url /AppWeather/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LidiiaPopadiuk/AppWeather.git"
+    "url": "git+https://github.com/YuliaPelia/AppWeather.git"
   },
-  "homepage": "https://LidiiaPopadiuk.github.io/AppWeather/",
   "bugs": {
-    "url": "https://github.com/LidiiaPopadiuk/AppWeather/issues"
+    "url": "https://github.com/YuliaPelia/AppWeather/issues"
   },
   "keywords": [],
   "author": "",
