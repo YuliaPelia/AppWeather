@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "npx parcel index.html",
-    "build": "parcel build ./index.html --public-url /WeatherApp/",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build ./index.html --public-url /WeatherApp/"
   },
+  
+  "repository": {    "type": "git",
+    "url": "git+https://github.com/lidiiapopadiuk/WeatherApp.git"  },
   "homepage": "https://lidiiapopadiuk.github.io/WeatherApp/",
+  "bugs": {    "url": "https://github.com/lidiiapopadiuk/WeatherApp/issues"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
