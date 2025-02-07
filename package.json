@@ -9,9 +9,9 @@
   },
   
   "repository": {    "type": "git",
-    "url": "git+https://github.com/lidiiapopadiuk/WheatherApp.git"  },
-  "homepage": "https://lidiiapopadiuk.github.io/WheatherApp/",
-  "bugs": {    "url": "https://github.com/lidiiapopadiuk/WheatherApp/issues"
+    "url": "git+https://github.com/LidiiaPopadiuk/WheatherApp.git"  },
+  "homepage": "https://LidiiaPopadiuk.github.io/WheatherApp/",
+  "bugs": {    "url": "https://github.com/LidiiaPopadiuk/WheatherApp/issues"
   },
   "keywords": [],
   "author": "",
